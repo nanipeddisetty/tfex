@@ -11,9 +11,14 @@ agent any
           echo 'plane'
              }
         }
-         stage ('Qterraform apply') {
+         stage ('terraform apply') {
              steps {
           echo 'apply'
+             }
+        }
+        stage ('apply') {
+             steps {
+          echo 'hello'
              }
         }
     }           
