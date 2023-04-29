@@ -1,0 +1,20 @@
+pipeline { 
+agent any 
+    stages { 
+         stage ('terraform init') { 
+            steps {
+          echo 'init'
+         }
+        }
+         stage ('terraform plan') {
+             steps {
+          echo 'plane'
+             }
+        }
+         stage ('Qterraform apply') {
+             steps {
+          echo 'apply'
+             }
+        }
+    }           
+ }
